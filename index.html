@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Rohit Grover - Portfolio</title>
+    <link rel="shortcut icon" href="img/r-favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<head>
-  <title>Rohit Grover - Portfolio</title>
-  <link rel="shortcut icon" href="img/r-favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+  <body>
+    <header class="page-header">
+      <img src="img/r-logo.jpg" alt="logo" class="page-header__item" />
+      <nav class="page-header__item">
+        <ul role="menu" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              aria-label="About me"
+              class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              aria-label="My contact details"
+              class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              aria-label="Work"
+              class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="profile">
+      <img src="img/pic.jpg" alt="A photograph of me" class="profile-pic" />
+      <h1>Hello World!</h1>
+      <p>Hi, I am Rohit, a budding expert web developer</p>
+      <a href="#">Check out some of my code</a>
+      <br />
+      <button type="button">Default Button</button>
+    </div>
 
-<body>
-  <header class="page-header">
-                                                              <img src="img/r-logo.jpg" alt="logo" class = "page-header__item">
-                                                              <nav class = "page-header__item">
-      <ul role="menu" class="navigation-list">
-        <li role = "presentation">
-          <a href="index.html" role = "menuitem">Home</a>
-        </li>
-        <li role = "presentation">
-          <a href="about.html" role = "menuitem" aria-label = "About me" class="navigation-list__item">About</span></a>
-        </li>
-        <li role = "presentation">
-          <a href="contact.html" role = "menuitem" aria-label = "My contact details" class="navigation-list__item">Contact</a>
-        </li>
-        <li role = "presentation">
-          <a href="work.html" role = "menuitem" aria-label = "Work" class="navigation-list__item">Work</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="profile">
-    <img src="img/pic.jpg" alt="A photograph of me" class="profile-pic">
-    <h1>Hello</h1>
-    <p>Hi, I am Rohit, a budding expert web developer</p>
-    <a href = "#">Check out some of my code</a>
-    <br>
-    <button type="button">Default Button</button>
-  </div>
-  <script src="js/tota11y.min.js"></script>
-</body>
-<footer class="page-footer">
-  <div>
-    <p>Find me on</p>
-    <!-- Github logo -->
-    <a href="https://github.com/groverohit">
-      <img src="img/github_icon.svg" alt="github">
-    </a>
-    <!-- Twitter logo -->
-    <a href="https://twitter.com/groverrohit">
-      <img src="img/twitter_icon.svg" alt="twitter">
-    </a>
-    <!-- LinkedIn logo -->
-    <a href="https://linkedin.com/in/groverohit">
-      <img src="img/linkedin_icon.svg" alt="linkedin">
-    </a>
-  </div>
-</footer>
+    <footer class="page-footer">
+      <div>
+        <p>Find me on</p>
+        <!-- Github logo -->
+        <a href="https://github.com/groverohit">
+          <img src="img/github_icon.svg" alt="github" />
+        </a>
+        <!-- Twitter logo -->
+        <a href="https://twitter.com/groverrohit">
+          <img src="img/twitter_icon.svg" alt="twitter" />
+        </a>
+        <!-- LinkedIn logo -->
+        <a href="https://linkedin.com/in/groverohit">
+          <img src="img/linkedin_icon.svg" alt="linkedin" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
