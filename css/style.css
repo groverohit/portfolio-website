@@ -24,7 +24,7 @@ body {
 
 table {
   display: inline-block;
-  border: ridge 5px black;
+  border: ridge 5px;
   border-color: #e00;
   background-color: #fff;
   color: #e00;
@@ -116,22 +116,6 @@ li {
   display: inline-table;
 }
 
-.profile-pic-div {
-  text-align: center;
-  margin: auto;
-  vertical-align: middle;
-  display: flex;
-  height: auto;
-  float: left;
-}
-
-.profile-text {
-  vertical-align: middle;
-  display: inline-block;
-  height: auto;
-  margin: auto;
-}
-
 .grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -146,8 +130,9 @@ li {
 }
 
 .profile-pic {
-  width: 200px;
-  border-radius: 50%;
+  width: 175px;
+  border-radius: 25%;
+  margin: auto;
 }
 
 .page-footer {
