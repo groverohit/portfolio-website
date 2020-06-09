@@ -6,22 +6,39 @@
 */
 
 body {
-  background-color: lightgray;
-  color: #3b0808;
+  background-color: #fff;
+  color: #e00;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.2;
   padding: 20px;
+  text-align: center;
+}
+
+table {
+  display: inline-block;
+  border: ridge 5px black;
+  border-color: #e00;
+  background-color: #fff;
+  color: #e00;
+}
+
+td {
+  border: solid 2px #e00;
+}
+
+thead {
+  font-size: 24px;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.5;
 }
 
 a {
-  color: #000;
+  color: #e00;
   -webkit-transition: 0.5s color;
   -o-transition: 0.5s color;
   transition: 0.5s color;
@@ -33,14 +50,14 @@ a:active {
 
 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 button {
   border: none;
   font-family: inherit;
-  background-color: #000;
-  color: white;
+  background-color: #e00;
+  color: #fff;
   margin: 10px;
   -webkit-transition: 1s opacity;
   -o-transition: 1s opacity;
@@ -51,6 +68,9 @@ button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.5;
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
 }
 
 .page-header {
@@ -59,6 +79,7 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
+  border-bottom: 5px solid #e00;
 }
 
 .page-header__item {
@@ -94,9 +115,30 @@ li {
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
-  border: solid 5px;
+  margin: 20px auto;
+  border: 5px;
   text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  display: inline-table;
+}
+
+.profile-pic-div {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  float: left;
+}
+
+.profile-text {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+  margin: auto;
 }
 
 .grid {
@@ -151,12 +193,12 @@ li {
 }
 
 .grid__item {
-  background-color: white;
+  background-color: #e00;
+  color: #fff;
 }
 
 .profile-pic {
-  float: left;
-  width: 175px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -170,6 +212,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: black;
 }
 
 svg {
@@ -209,92 +252,34 @@ svg {
 
 @-webkit-keyframes rotate-pic {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) scale(1, 1);
+            transform: rotate(0deg) scale(1, 1);
   }
 
   to {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(90deg) scale(2, 2);
+            transform: rotate(90deg) scale(2, 2);
   }
 }
 
 @keyframes rotate-pic {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) scale(1, 1);
+            transform: rotate(0deg) scale(1, 1);
   }
 
   to {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(90deg) scale(2, 2);
+            transform: rotate(90deg) scale(2, 2);
   }
 }
 
-@-webkit-keyframes cloud-scale {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-
-  to {
-    -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
-  }
-}
-
-@keyframes cloud-scale {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-
-  to {
-    -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
-  }
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-
-.berlin-illustration {
+.bee-kind {
   -webkit-animation: 5s rotate-pic infinite alternate ease;
           animation: 5s rotate-pic infinite alternate ease;
 }
 
-.cloud-front {
-  -webkit-animation: 3s cloud-move infinite alternate linear;
-          animation: 3s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  -webkit-animation: 3s cloud-scale infinite alternate linear;
-          animation: 3s cloud-scale infinite alternate linear;
-}
-
-.sun {
+.st3 {
   -webkit-animation: 1s color-change infinite normal ease-out;
           animation: 1s color-change infinite normal ease-out;
 }
