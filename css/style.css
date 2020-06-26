@@ -184,3 +184,17 @@ svg {
 .st3 {
   animation: 1s color-change infinite normal ease-out;
 }
+
+.label-standard,
+.input-standard {
+  align-items: left;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+form {
+  margin: auto;
+  width: 500px;
+}

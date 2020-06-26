@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -43,41 +43,16 @@
       </nav>
     </header>
 
-    <h1><u>Contact Me</u></h1>
-
-    <form action="#" method="post" style="margin: auto">
-      <label for="contact-email">Email: </label>
-      <input type="email" id="contact-email" required />
-
-      <label for="contact-telephone">Telephone: </label>
-      <input
-        type="tel"
-        id="contact-telephone"
-        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-      />
-      <br />
-      <br />
-      <label for="message">Message (Maximum 240 characters): </label>
-      <textarea maxlength="240" id="message" required></textarea>
-      <br />
-      <br />
-      <input
-        type="submit"
-        value="Send message"
-        aria-label="Send message
-        button"
-        style="color: #e00"
-      />
-    </form>
+    <h1>Contact Me</h1>
 
     <div style="text-align: center; margin: auto; display: inline-block">
-      <div style="float: left; margin:10px">
+      <div style="float: left; margin:20px">
         Rohit Grover<br />
         Moscrop St<br />
         Burnaby<br />
         BC V5G 2C7
       </div>
-      <div style="float: right; margin:10px">
+      <div style="float: right; margin:20px">
         Tel: <a href="tel:+11234567" aria-label="My phone number">+1 1234567</a
         ><br />
         Skype:
@@ -91,6 +66,41 @@
         >
       </div>
     </div>
+
+    <h3>Send a message :-</h3>
+
+    <form action="#" method="post" style="margin: auto">
+      <label for="contact-email" class="label-standard">Email: </label>
+      <br />
+      <input type="email" id="contact-email" class="input-standard" required />
+      <label for="contact-telephone" class="label-standard">Telephone: </label>
+      <br />
+      <input
+        type="tel"
+        class="input-standard"
+        id="contact-telephone"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+      />
+      <label for="message" class="label-standard"
+        >Message (Maximum 240 characters):
+      </label>
+      <br />
+      <textarea
+        maxlength="240"
+        id="message"
+        class="input-standard"
+        required
+      ></textarea>
+      <br />
+      <br />
+      <input
+        type="submit"
+        value="Send message"
+        aria-label="Send message
+        button"
+        style="color: #e00"
+      />
+    </form>
 
     <footer class="page-footer">
       <div>
