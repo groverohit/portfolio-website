@@ -44,6 +44,10 @@ h1 {
   line-height: 1.5;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 a {
   color: var(--a-color);
   transition: 0.5s color;
@@ -116,26 +120,34 @@ li {
   text-align: center;
   vertical-align: middle;
   height: 100%;
-  display: inline-table;
+  /* display: inline-table; */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   text-align: center;
   grid-gap: 20px;
 }
 
 .grid__item {
-  background-color: #e00;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  border: 5px solid;
+  border-color: #e00;
+}
+
+.grid__item:last-child {
+  grid-column: 3/3;
+  grid-row: 1/3;
 }
 
 .profile-pic {
   width: 175px;
   border-radius: 25%;
   margin: auto;
+  float: left;
 }
 
 .page-footer {
@@ -152,7 +164,12 @@ svg {
 
 @media all and (max-width: 700px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
   }
 
   h1 {
@@ -204,8 +221,14 @@ form {
 
 .profile-pic {
   height: 200px;
+  margin: 20px;
 }
 
 .portfolio-logo {
   font-family: "Lobster";
+}
+
+.screenshot {
+  height: 350px;
+  width: 350px;
 }
