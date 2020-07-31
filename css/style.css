@@ -70,14 +70,13 @@ button {
   background-color: var(--button-background-color);
   color: var(--button-color);
   margin: 10px;
-  transition: 1s opacity;
 }
 
 button:hover,
 button:focus {
   cursor: pointer;
-  opacity: 0.5;
-  transform: scale(2);
+  /* opacity: 0.5; */
+  outline: none;
 }
 
 .page-header {
