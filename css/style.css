@@ -145,7 +145,7 @@ li {
   color: #000;
   border: 5px solid;
   border-color: #e00;
-  border-radius: 20%;
+  border-radius: 5%;
 }
 
 .grid__item:first-child {
