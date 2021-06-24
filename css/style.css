@@ -49,6 +49,7 @@ thead {
 h1 {
   font-size: var(--h1-font-size);
   font-family: 'Benne', serif;
+  color: #e00;
   line-height: 1.5;
 }
 
